@@ -1,4 +1,6 @@
 ﻿using System;
+using UdemyCourse.Entities;
+using UdemyCourse.Entities.Enums;
 
 namespace UdemyCourse
 {
@@ -6,9 +8,9 @@ namespace UdemyCourse
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Como você está hoje?");
-            Console.WriteLine("Que coisa, não?");
+            Order o = new Order { Id = 1080, Moment = DateTime.Now, Status = OrderStatus.PendingPayment};
+
+            Console.WriteLine(o);
 
         }
     }
